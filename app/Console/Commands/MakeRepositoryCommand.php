@@ -19,6 +19,6 @@ class MakeRepositoryCommand extends GeneratorCommand
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace.'\Repositories';
+        return $rootNamespace . '\Repositories';
     }
 }
