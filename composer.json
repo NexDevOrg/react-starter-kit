@@ -61,6 +61,22 @@
             "npm run build:ssr",
             "Composer\\Config::disableProcessTimeout",
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"php artisan inertia:start-ssr\" --names=server,queue,logs,ssr"
+        ],
+        "pint": [
+            "./vendor/bin/pint"
+        ],
+        "pint:check": [
+            "./vendor/bin/pint --test"
+        ],
+        "format": [
+            "npm run format",
+            "npm run lint",
+            "composer run pint"
+        ],
+        "format:check": [
+            "npm run format:check",
+            "npm run lint:check",
+            "composer run pint:check"
         ]
     },
     "extra": {
