@@ -1,6 +1,6 @@
-import { AppContent } from '@/components/app-content';
-import { AppHeader } from '@/components/app-header';
-import { AppShell } from '@/components/app-shell';
+import { AppContent } from '@/layouts/app/partials/content';
+import { AppHeader } from '@/layouts/app/partials/header';
+import { AppShell } from '@/layouts/app/partials/shell';
 import { type BreadcrumbItem } from '@/types';
 import type { PropsWithChildren } from 'react';
 
